@@ -13,7 +13,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Gutted</h1>
+      <Route exact path="/">
+        <Home/>
+      </Route>
+
+      <Route path="/about">
+        <About/>
+      </Route>
+
+      <Route path="/stock">
+        <Dashboard/>
+      </Route>
+
+      <Route path="/stock/:symbol">
+        <Stock/>
+      </Route>
     </div>
   );
 };
