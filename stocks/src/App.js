@@ -1,35 +1,39 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
-import About from "./components/About";
-import Dashboard from "./components/Dashboard";
-import Home from "./components/Home";
-import Stock from "./components/Stock";
+import About from "./pages/About";
+import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
+import Stock from "./pages/Stock";
+
+import Nav from "./components/Nav";
 
 import data from "./data";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <Nav />
+
       <Route exact path="/">
-        <Home/>
+        <Home />
       </Route>
 
       <Route path="/about">
-        <About/>
+        <About />
       </Route>
 
-      <Route path="/stock">
-        <Dashboard/>
+      <Route path="/stocks">
+        <Dashboard />
       </Route>
 
-      <Route path="/stock/:symbol">
-        <Stock/>
+      <Route path="/stocks/:symbol">
+        <Stock />
       </Route>
     </div>
   );
-};
+}
 
 export default App;
