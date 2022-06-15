@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Stock() {
+function Stock(props) {
   return (
     <div>Individual Stock</div>
   )
