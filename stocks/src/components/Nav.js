@@ -5,16 +5,16 @@ function Nav(props) {
   return (
     <div className="nav">
       <Link to="/">
-        <div>Home</div>
+        <div className="nav-item">Home</div>
       </Link>
       <Link to="/about">
-        <div>About</div>
+        <div className="nav-item">About</div>
       </Link>
       <Link to="/stocks">
-        <div>Dashboard/Stocks</div>
+        <div className="nav-item">Dashboard/Stocks</div>
       </Link>
       <Link to="/stocks/:symbol">
-        <div>Stock Info</div>
+        <div className="nav-item">Stock Info</div>
       </Link>
     </div>
   );

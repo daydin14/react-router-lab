@@ -11,6 +11,7 @@ import Nav from "./components/Nav";
 import data from "./data";
 
 import "./App.css";
+import "./styles.css";
 
 function App() {
   return (

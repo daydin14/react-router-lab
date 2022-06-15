@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  background-color: crimson;
+}
+.nav-item {
+  padding: 10px;
+}
