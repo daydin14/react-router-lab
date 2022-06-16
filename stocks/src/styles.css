@@ -8,3 +8,7 @@
 .nav-item {
   padding: 10px;
 }
+ul {
+  list-style: none;
+  text-align: left;
+}

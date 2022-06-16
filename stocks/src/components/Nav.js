@@ -13,9 +13,9 @@ function Nav(props) {
       <Link to="/stocks">
         <div className="nav-item">Dashboard/Stocks</div>
       </Link>
-      <Link to="/stocks/:symbol">
+      {/* <Link to="/stocks/:symbol">
         <div className="nav-item">Stock Info</div>
-      </Link>
+      </Link> */}
     </div>
   );
 }

@@ -13,7 +13,7 @@ import data from "./data";
 import "./App.css";
 import "./styles.css";
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Nav />
@@ -26,12 +26,12 @@ function App() {
         <About />
       </Route>
 
-      <Route path="/stocks">
-        <Dashboard />
+      <Route path="/stocks"
+            render={props => <Dashboard {...props} stockData={data}/>}>
       </Route>
 
-      <Route path="/stocks/:symbol">
-        <Stock />
+      <Route path="/stocks/:symbol"
+            render={props => <Stock stockData={data} {...props} />}>
       </Route>
     </div>
   );
